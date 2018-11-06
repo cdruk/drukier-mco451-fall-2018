@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.chana.tipcalculator.activities.MainActivity">
+
+    <item
+        android:id="@+id/menu_clearField"
+        android:icon="@drawable/ic_clear_white"
+        android:title="@string/action_clear_field"
+        app:showAsAction="ifRoom|withText" />
+
+    <item
+        android:id="@+id/menu_calculate"
+        android:icon="@drawable/ic_launch_white"
+        android:title="@string/action_calculate"
+        app:showAsAction="ifRoom|withText" />
+
+    <item
+        android:id="@+id/menu_resetAll"
+        android:icon="@drawable/ic_clear_all_white"
+        android:title="@string/action_reset_all"
+        app:showAsAction="ifRoom|withText" />
+
+    <item
+        android:id="@+id/menu_settings"
+        android:icon="@drawable/ic_settings_white"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+
+    <item
+        android:icon="@drawable/ic_info_white"
+        android:title="@string/action_about"
+        app:showAsAction="never"
+        android:onClick="showAbout"/>
+</menu>
