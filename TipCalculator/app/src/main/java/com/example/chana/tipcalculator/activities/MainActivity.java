@@ -1,6 +1,7 @@
 package com.example.chana.tipcalculator.activities;
 
 import android.Manifest;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
@@ -11,6 +12,7 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.app.AppCompatDelegate;
 import android.support.v7.widget.Toolbar;
@@ -235,5 +237,21 @@ public class MainActivity extends AppCompatActivity {
     public void showAbout(MenuItem item) {
         Toast.makeText(getApplicationContext(),
                 "About...", Toast.LENGTH_LONG).show();
+
+        /*AlertDialog.Builder adb = new AlertDialog.Builder(MainActivity.this);
+        adb.setTitle("About...");
+        adb.setMessage("Yay me!");
+        adb.setIcon(R.drawable.ic_logo);
+        adb.setNeutralButton(getString(android.R.string.ok), new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i) {
+                Toast.makeText(getApplicationContext(),
+                        "Clicked OK...", Toast.LENGTH_LONG).show();
+            }
+        });
+        adb.show();*/
+
+        Utils.showInfoDialog(MainActivity.this,
+                "About 2", "This is easier");
     }
 }
