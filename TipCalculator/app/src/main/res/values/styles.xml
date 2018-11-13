@@ -1,54 +1,87 @@
-<resources><!-- Base AppTheme is used for SettingsActivity which has a DayNight bug re: text colors -->
+<resources>
+
+    <!-- Base AppTheme is used for SettingsActivity which has a DayNight bug re: text colors -->
     <style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+
         <item name="android:alertDialogTheme">@style/AppCompatAlertDialogStyle</item>
         <item name="alertDialogTheme">@style/AppCompatAlertDialogStyle</item>
+
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="colorButtonNormal">@color/colorPrimaryLight</item>
         <item name="colorControlActivated">@color/colorAccent</item>
+
         <item name="buttonStyle">@style/coloredButtonStyle</item>
         <item name="checkboxStyle">@style/ColoredCheckBoxStyle</item>
         <item name="actionBarTheme">@style/AppTheme.AppBarOverlay</item>
-    </style><!-- This theme is our default theme, with text colors set based on DayNight -->
+    </style>
+
+    <!-- This theme is our default theme, with text colors set based on DayNight -->
     <style name="AppTheme.WithDayNightTextColors">
         <item name="android:textColorPrimary">@color/colorPrimaryText</item>
         <item name="android:textColorSecondary">@color/colorSecondaryText</item>
-    </style><!-- This theme extends our default theme to hide the built-in ActionBar; we use a ToolBar --><!-- This theme extends our default theme to hide the built-in ActionBar -->
+    </style>
+
+    <!-- This theme extends our default theme to hide the built-in ActionBar; we use a ToolBar -->
+
+    <!-- This theme extends our default theme to hide the built-in ActionBar -->
     <style name="AppTheme.NoActionBar">
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
-    </style><!-- This theme extends our no-title version of the default theme to use a splash background-->
+    </style>
+
+    <!-- This theme extends our no-title version of the default theme to use a splash background-->
     <style name="AppTheme.NoActionBar.SplashScreenTheme">
         <item name="android:background">@drawable/splash_background</item>
-    </style><!-- This theme is used for the Results Activity, to have it not take up the entire screen -->
+    </style>
+
+
+    <!-- This theme is used for the Results Activity, to have it not take up the entire screen -->
     <style name="AppThemeMinWidth" parent="Theme.AppCompat.DayNight.Dialog.MinWidth">
         <item name="android:alertDialogTheme">@style/AppCompatAlertDialogStyle</item>
         <item name="alertDialogTheme">@style/AppCompatAlertDialogStyle</item>
+
         <item name="android:textColorPrimary">@color/colorPrimaryText</item>
         <item name="android:textColorSecondary">@color/colorSecondaryText</item>
+
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="colorButtonNormal">@color/colorPrimaryLight</item>
         <item name="colorControlActivated">@color/colorAccent</item>
+
         <item name="windowNoTitle">true</item>
         <item name="windowActionBar">false</item>
+
         <item name="buttonStyle">@style/coloredButtonStyle</item>
         <item name="checkboxStyle">@style/ColoredCheckBoxStyle</item>
-    </style><!-- This theme is not used here, but is used for an AlertDialog-type Activity --><!-- The following two styles have no changes from their parents, but in case we do later... --><!-- Needed even with DayNight to use a Dark ActionBar (with light text) even during day -->
-    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" /><!-- Not used when using DayNight since the popup overlay will automatically match day/night -->
-    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" /><!-- This style is used for the about or other dialogs, to make them match the AppThemes -->
+    </style>
+
+    <!-- This theme is not used here, but is used for an AlertDialog-type Activity -->
+
+    <!-- The following two styles have no changes from their parents, but in case we do later... -->
+    <!-- Needed even with DayNight to use a Dark ActionBar (with light text) even during day -->
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <!-- Not used when using DayNight since the popup overlay will automatically match day/night -->
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- This style is used for the about or other dialogs, to make them match the AppThemes -->
     <style name="AppCompatAlertDialogStyle" parent="Theme.AppCompat.DayNight.Dialog.Alert">
         <item name="android:textColorPrimary">@color/colorPrimaryText</item>
         <item name="android:textColorSecondary">@color/colorSecondaryText</item>
+
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="colorControlActivated">@color/colorAccent</item>
         <item name="colorControlHighlight">@color/colorPrimaryDark</item>
+
         <item name="android:windowCloseOnTouchOutside">true</item>
-    </style><!-- These styles are set above. So all buttons/checkboxes in Activity are styled like this. -->
+    </style>
+
+    <!-- These styles are set above. So all buttons/checkboxes in Activity are styled like this. -->
     <style name="coloredButtonStyle" parent="Widget.AppCompat.Button.Colored">
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@android:color/primary_text_dark</item>
@@ -56,7 +89,9 @@
 
     <style name="ColoredCheckBoxStyle" parent="Widget.AppCompat.CompoundButton.CheckBox">
         <item name="android:textColor">@color/colorPrimaryDark</item>
-    </style><!-- These styles are used to eliminate redundancies in XML and code -->
+    </style>
+
+    <!-- These styles are used to eliminate redundancies in XML and code -->
     <style name="borderlessButtonStyle" parent="Widget.AppCompat.Button.Borderless">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
@@ -183,4 +218,6 @@
         <item name="android:layout_margin">@dimen/fab_margin</item>
         <item name="android:src">@drawable/ic_launch_white</item>
     </style>
+
+
 </resources>

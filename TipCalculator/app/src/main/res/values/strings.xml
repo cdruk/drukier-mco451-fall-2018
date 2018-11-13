@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>    <!-- Activity Titles (Note: Main Activity uses the app name) -->
+<resources>
+    <!-- Activity Titles (Note: Main Activity uses the app name) -->
     <string name="app_name">Tip Calculator</string>
     <string name="title_activity_results">Results</string>
-    <string name="title_activity_settings">Settings</string>    <!-- Multiple Activities -->
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Multiple Activities -->
     <string name="background_image">background image</string>
     <string name="action_about">About</string>
     <string name="about_dialog_title">About Tip Calculator</string>
-    <string name="about_dialog_banner"><![CDATA[Created andÂ Â©Â 2015â 2019Â SamuelÂ A.\nEMail: mintedtech@gmail.com\n\nThank you to:\nTouro College\'s Lander College MCO 451 students for their thoughts and ideas.]]></string>    <!-- Main Activity -->
+    <string name="about_dialog_banner"><![CDATA[Created and © 2015–2019 Samuel A.\nEMail: mintedtech@gmail.com\n\nThank you to:\nTouro College\'s Lander College MCO 451/521 students for their thoughts and ideas.]]></string>
+
+    <!-- Main Activity -->
     <string name="banner_message">Please input the numbers.</string>
     <string name="action_settings">Settings</string>
     <string name="payers">Payers:</string>
@@ -20,13 +25,17 @@
     <string name="tip_colon_space">"Tip: "</string>
     <string name="show_full_results">Show Full Results</string>
     <string name="dollar_sign">$</string>
-    <string name="space">Â </string>
+    <string name="space"> </string>
     <string name="zero_point_zero_zero">0.00</string>
+
     <string name="defaultPayers">1</string>
+
     <string name="hint_subtotal">72.00</string>
     <string name="hint_tip_percent">20.00</string>
     <string name="hint_tax_amount">0.00</string>
-    <string name="hint_payers">1</string>    <!-- Keypad -->
+    <string name="hint_payers">1</string>
+
+    <!-- Keypad -->
     <string name="one">1</string>
     <string name="two">2</string>
     <string name="three">3</string>
@@ -38,9 +47,14 @@
     <string name="nine">9</string>
     <string name="zero">0</string>
     <string name="period">.</string>
-    <string name="backspace">â«</string>    <!-- Error strings -->
+    <string name="backspace">⌫</string>
+
+    <!-- Error strings -->
     <string name="error_keypad_decimal_point_not_allowed_here">A decimal point cannot be placed here.</string>
-    <string name="error_calc_subtotal_must_not_be_blank_or_zero">Subtotal must be non-zero and non-blank</string>    <!-- Results Activity -->
+    <string name="error_calc_subtotal_must_not_be_blank_or_zero">Subtotal must be non-zero and non-blank</string>
+
+
+    <!-- Results Activity -->
     <string name="results_header_per_payer">Per Payer</string>
     <string name="results_payers">Payer(s)</string>
     <string name="results_header_total">Total</string>
@@ -49,10 +63,16 @@
     <string name="results_tip">Tip</string>
     <string name="results_tax">Tax</string>
     <string name="results_subtotal">Subtotal</string>
-    <string name="results_total">Total</string>    <!-- Settings Activity-->    <!-- Preference Fragments -->
+    <string name="results_total">Total</string>
+
+    <!-- Settings Activity-->
+
+    <!-- Preference Fragments -->
     <string name="pref_header_general">General</string>
     <string name="pref_header_display">Display</string>
-    <string name="pref_header_local">Local</string>    <!-- Preferences -->
+    <string name="pref_header_local">Local</string>
+
+    <!-- Preferences -->
     <string name="showBackgroundKey">ShowBackground</string>
     <string name="showBackgroundSummary">Enable the background image</string>
     <string name="showBackgroundSummaryOn">Use an image background</string>
@@ -83,4 +103,71 @@
     <string name="defaultTipPercentageKey">DefaultTipPercentage</string>
     <string name="defaultTipPercentageTitle">Default Tip Percentage</string>
     <string name="defaultTipPercentageDefaultValue">20.00</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
 </resources>
